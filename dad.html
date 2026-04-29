@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAPHON ELECTRICAL ENGINEERING LTD</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d47a1;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        .title p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        nav {
+            background: #1565c0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .contact {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Zaphon Logo">
+        </a>
+
+        <div class="title">
+            <h1>ZAPHON ELECTRICAL ENGINEERING LTD</h1>
+            <p>Professional Electrical Solutions You Can Trust</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Reliable Electrical Engineering Services</h2>
+    <p>Delivering quality, safety, and innovation</p>
+</section>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            ZAPHON ELECTRICAL ENGINEERING LTD is a trusted provider of electrical engineering services.
+            We specialize in installations, maintenance, and repairs for residential, commercial, and industrial clients.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+
+            <div class="card">
+                <h3>Building Wiring</h3>
+                <p>Professional electrical wiring for homes and commercial buildings.</p>
+            </div>
+
+            <div class="card">
+                <h3>Installations</h3>
+                <p>Expert installation of electrical systems and equipment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Earthing Improvement</h3>
+                <p>Enhancing grounding systems for safety and efficiency.</p>
+            </div>
+
+            <div class="card">
+                <h3>HT & LV Gears</h3>
+                <p>Supply and maintenance of High Tension and Low Voltage equipment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Generators & Transformers</h3>
+                <p>Installation and servicing of generators and transformers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Repair Services</h3>
+                <p>Reliable repair and maintenance of electrical systems and equipment.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <p><strong>Company:</strong> ZAPHON ELECTRICAL ENGINEERING LTD</p>
+            <p><strong>Email:</strong> info@zaphon.com</p>
+            <p><strong>Phone:</strong> +233 244 682 937</p> 
+            <p><strong>+233 243 529 075</strong></p>
+            <p><strong>Location:</strong> Ghana</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 ZAPHON ELECTRICAL ENGINEERING LTD. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
