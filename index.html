@@ -22,13 +22,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 0.5px;
             flex-wrap: wrap;
             text-align: center;
         }
 
         .logo img {
-            height: 60px;
+            height: 80px;
         }
 
         .title h1 {
@@ -64,28 +64,74 @@
             margin: auto;
         }
 
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            position: relative;
-        }
+ .hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5);
-        }
+/* Background container */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
 
-        .hero h2, .hero p {
-            position: relative;
-            z-index: 1;
-        }
+/* Each image layer */
+.hero-bg span {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeSlide 20s infinite;
+}
+
+/* Stagger animation */
+.hero-bg span:nth-child(1) { animation-delay: 0s; }
+.hero-bg span:nth-child(2) { animation-delay: 5s; }
+.hero-bg span:nth-child(3) { animation-delay: 10s; }
+.hero-bg span:nth-child(4) { animation-delay: 15s; }
+.hero-bg span:nth-child(5) { animation-delay: 20s; }
+.hero-bg span:nth-child(6) { animation-delay: 25s; }
+.hero-bg span:nth-child(7) { animation-delay: 30s; }
+.hero-bg span:nth-child(8) { animation-delay: 35s; }
+.hero-bg span:nth-child(9) { animation-delay: 40s; }
+.hero-bg span:nth-child(10) { animation-delay: 45s; }
+.hero-bg span:nth-child(11) { animation-delay: 50s; }
+.hero-bg span:nth-child(12) { animation-delay: 55s; }
+.hero-bg span:nth-child(13) { animation-delay: 60s; }
+
+/* Fade animation */
+@keyframes fadeSlide {
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    25%  { opacity: 1; }
+    30%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Dark overlay */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+/* Text stays on top */
+.hero h2,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
 
         .services {
             display: grid;
@@ -133,7 +179,7 @@
 <header>
     <div class="header-content">
         <a href="#" class="logo">
-            <img src="images/logo.png" alt="Zaphon Logo">
+            <img src="HANDYMAN.png" alt="Zaphon Logo">
         </a>
 
         <div class="title">
@@ -150,6 +196,23 @@
 </nav>
 
 <section class="hero">
+    <div class="hero-bg">
+        <span style="background-image: url('BG1.jpeg');"></span>
+        <span style="background-image: url('BG2.jpeg');"></span>
+        <span style="background-image: url('BG3.jpeg');"></span>
+        <span style="background-image: url('BG4.jpeg');"></span>
+        <span style="background-image: url('BG5.jpeg);"></span>
+        <span style="background-image: url('BG6.jpeg');"></span>
+        <span style="background-image: url('BG7.jpeg');"></span>
+        <span style="background-image: url('BG8.jpeg');"></span>
+        <span style="background-image: url('BG9.jpeg');"></span>
+        <span style="background-image: url('BG10.jpeg);"></span>
+        <span style="background-image: url('BG11.jpeg');"></span>
+        <span style="background-image: url('BG12.jpeg');"></span>
+        <span style="background-image: url('BG13.jpeg');"></span>
+
+    </div>
+
     <h2>Reliable Electrical Engineering Services</h2>
     <p>Delivering quality, safety, and innovation</p>
 </section>
@@ -205,10 +268,9 @@
         <h2>Contact Us</h2>
         <div class="contact">
             <p><strong>Company:</strong> ZAPHON ELECTRICAL ENGINEERING LTD</p>
-            <p><strong>Email:</strong> info@zaphon.com</p>
-            <p><strong>Phone:</strong> +233 244 682 937</p> 
-            <p><strong>+233 243 529 075</strong></p>
-            <p><strong>Location:</strong> Ghana</p>
+            <p><strong>Email:</strong> zaphonelectrical@gmail.com</p>
+            <p><strong>Phone:</strong> +233 244 682 937/+233 243 529 075</p> 
+           <p><strong>Location:</strong> Ghana</p>
         </div>
     </section>
 
