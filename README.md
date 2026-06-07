@@ -1,4 +1,4 @@
-#Zaphon Electrical Engineering Ltd showcasing electrical engineering services, company information , contact details, and customer enegaged features
+Zaphon Electrical Engineering Ltd showcasing electrical engineering services, company information , contact details, and customer engaged features
 -Responsive and modern design
 -company profile and mission statement
 -services showcase
